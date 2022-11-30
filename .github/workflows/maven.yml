@@ -34,9 +34,9 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
       with:
-        image: repo/image
-        tags: v1, latest
-        registry: registry-url.io
+        image: olehhordiienko1/springboot-images-new
+        tags: latest
+        registry: docker
         dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
