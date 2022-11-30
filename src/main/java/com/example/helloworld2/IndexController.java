@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Controller
 public class IndexController {
-    @GetMapping("/")
+    @GetMapping("/hello")
     @ResponseBody
     public String index() {
         return "Hello World " + LocalDateTime.now();
